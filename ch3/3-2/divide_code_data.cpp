@@ -24,3 +24,6 @@ const string monthNmae[] = {
     "January", "February", "March", "April", "May", "June", "July", "August",
     "September", "October", "November","December"
 };
+
+const int dx[] = {0, 1, 0, -1};
+const int dy[] = {-1, 0, 1, 0};

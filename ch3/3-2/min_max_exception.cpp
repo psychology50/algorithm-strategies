@@ -11,7 +11,7 @@ using namespace std;
 //     return true;
 // }
 
-// 가장 작은 소수인 1도 문제
+// 소수가 아니면서 가장 작은 자연수 1도 문제
 bool isPrime(int n) {
     if (n == 2) return true;
     if (n % 2 == 0) return false;
