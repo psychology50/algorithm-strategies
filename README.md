@@ -5,9 +5,9 @@
 매주 화요일 18:30~
   
 ### 멤버
-- 양재서 : C++
-- 최희진 : Swift
-- 황수비 : Java
+- [양재서](https://github.com/psychology50) : C++
+- [최희진](https://github.com/heejinnn) : Swift
+- [황수비](https://github.com/subihawng) : Java
 
 ### 발표 방식
 - 발표자는 당일 랜덤으로 선정합니다.
