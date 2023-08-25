@@ -8,6 +8,7 @@
 - [양재서](https://github.com/psychology50) : C++
 - [최희진](https://github.com/heejinnn) : Swift
 - [황수비](https://github.com/subihawng) : Java
+  + [블로그](https://velog.io/@super-hwang)
 
 ### 활동 기록
 
