@@ -23,5 +23,15 @@ void normalize(vector<int>& num) {
 
     while (num.size() > 1 && num.back() == 0) num.pop_back();
 }
+
 // 두 긴 자연수의 곱을 반환한다
 // 각 배열에는 각 수의 자릿수가 1의 자리에서부터 시작해 저장되어 있다
+// 예 : multiply({3, 2, 1}, {6, 5, 4}) = 123 * 456 = 56088 = {8, 8, 0, 6, 5}
+vector<int> multiply(const vector<int>& a, const vector<int>& b) {
+    vector<int> c(a.size() + b.size() + 1, 0);
+    for (int i = 0; i < a.size(); i++) 
+        for (int j = 0; j < b.size(); j++) 
+            c[i + j] += a[i] * b[j];
+    normalize(c);
+    return c;
+}
