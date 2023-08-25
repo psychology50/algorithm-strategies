@@ -3,12 +3,12 @@ import Foundation
 let input = readLine()!.split(separator: " ").map{Int(String($0))!}
 
 var(N, r, c) = (input[0], input[1], input[2])
-var num = Int(pow(2.0, Float(N)))
+var arrSize = Int(pow(2.0, Float(N)))
 
 var cnt = 0
 
 
-check(r, c, num)
+check(r, c, arrSize)
 
 func check(_ x: Int, _ y: Int, _ size: Int){
     
