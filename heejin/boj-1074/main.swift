@@ -24,11 +24,11 @@ func check(_ x: Int, _ y: Int, _ size: Int){
             }
         }
         else {//1,2 분면
-            if(y > size/2 - 1){//2
+            if(y > size/2 - 1){//1
                 cnt += (size * size) * 1/4
                 check(x, y-size/2, size/2)
             }
-            else{//1
+            else{//2
                 check(x, y, size/2)
             }
         }
