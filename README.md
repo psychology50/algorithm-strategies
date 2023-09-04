@@ -10,8 +10,3 @@
 - [황수비](https://github.com/subihawng) : Java
   + [블로그](https://velog.io/@super-hwang)
 
-### 활동 기록
-
-# 1주차
-
-# 2주차
