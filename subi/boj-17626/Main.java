@@ -1,47 +1,24 @@
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class Main {
 
-  static int[] cache;
-
   public static void main(String[] args) throws IOException {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+    int n = Integer.parseInt(br.readLine());
+    int[] dp = new int[n + 1];
 
-    String str;
-    while ((str = br.readLine()) != null) {
-      int input = Integer.parseInt(str);
-      int testLength = (int) Math.pow(3, input);
-      StringBuilder kanTo = new StringBuilder();
-
-      cache = new int[testLength];
-
-      findKantoSet(0, testLength);
-
-      for (int i = 0; i < testLength; i++) {
-        if (cache[i] == 0) kanTo.append('-');
-        else kanTo.append(' ');
+    dp[0] = 0;
+    dp[1] = 1;
+    for(int i = 2; i <= n; i++) {
+      dp[i] = dp[i - 1];
+      for(int j = 1; j * j <= i; j++) {
+        dp[i] = Math.min(dp[i], dp[i - (j * j)]);
       }
-      bw.write(kanTo.toString());
-      bw.write("\n");
+      dp[i]++;
     }
-
-    br.close();
-    bw.close();
+    System.out.println(dp[n]);
   }
 
-  static void findKantoSet(int start, int length) {
-    // 기저 사례
-    if (length == 1) return;
-
-    int divideSize = length / 3;
-
-    // 3등분한 문자열 공백 부분 처리
-    for (int i = start + divideSize; i < start + 2 * divideSize; i++) {
-      cache[i] = -1;
-    }
-
-    findKantoSet(start, divideSize);
-    findKantoSet(start + 2 * divideSize, divideSize);
-  }
 }
