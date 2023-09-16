@@ -2,19 +2,18 @@ import java.io.*;
 import java.util.StringTokenizer;
 
 public class Main {
-  static boolean[][] check;	//M개 조합 저장 배열
-  static int[] select = new int[3];	//선택한 아이스크림 저장 배열
-  static int N,M, answer = 0;
+  static boolean[][] check;
+  static int[] select = new int[3];
+  static int N,M, count = 0;
+
   public static void main(String[] args) throws IOException {
-    //입력값 처리하는 BufferedReader
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    //결과값 출력하는 BufferedWriter
     BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
     StringTokenizer st= new StringTokenizer(br.readLine()," ");
     N = Integer.parseInt(st.nextToken());
     M = Integer.parseInt(st.nextToken());
     check = new boolean[N+1][N+1];
-    //입력값 저장
+
     for(int i=0;i<M;i++){
       st = new StringTokenizer(br.readLine()," ");
       int n1 = Integer.parseInt(st.nextToken());
@@ -27,15 +26,13 @@ public class Main {
       select[0] = i;
       search(1, i);
     }
-    bw.write(answer + "");	//조건 만족하는 조합 개수 BufferedWriter 저장
-    bw.flush();		//결과 출력
+    bw.write(String.valueOf(count));
     bw.close();
     br.close();
   }
-  //아이스크림 조합 모든 경우 만드는 재귀 함수
   static void search(int depth, int index){
     if(depth==3){
-      selectCheck();	//조건에 만족하는지 확인
+      selectCheck();
       return;
     }
     //탐색
@@ -44,15 +41,13 @@ public class Main {
       search(depth+1, i);
     }
   }
-  //조건에 만족하는지 확인 및 개수 증가 함수
   static void selectCheck(){
     for(int i=0;i<3;i++){
       for(int j=i+1;j<3;j++){
-        if(check[select[i]][select[j]])	//M조합이 해당 경우에 존재시
+        if(check[select[i]][select[j]])
           return;
       }
     }
-    //M조합이 해당 경우에 존재 X일 때
-    answer++;
+    count++;
   }
 }
