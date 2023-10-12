@@ -1,54 +1,51 @@
-
 let N = Int(readLine()!)!
 
-var arr : [[Int]] = []
-
-for _ in 0..<N {
-    let Input = Array(readLine()!).map {Int(String($0))!}
-   
-    arr.append(Input)
+struct Node {
+    let left: String
+    let right: String
 }
 
-var result = ""
+var graph: [String: Node] = [:]
 
-divide(0,0,N)
-
-func divide (_ x:Int , _ y: Int, _ size: Int){
+for _ in 0..<N{
+    let input = readLine()!.split(separator: " ").map{String($0)}
+    graph[input[0]] = Node(left: input[1], right: input[2])
     
-    if check(x, y, size){
-        if arr[x][y] == 0{
-            result = result + "0"
-        }
-        else{
-            result = result + "1"
-        }
-        
-    }
-    else{
-        let sx = [ x, x, x + size/2, x + size/2 ]
-        let sy = [y, y + size/2, y, y + size/2 ]
-
-        for i in 0..<4{
-            divide(sx[i], sy[i], size/2)
-        }
-        result = result + ")"
-    }
 }
 
-func check (_ x: Int, _ y: Int, _ size: Int) -> Bool{
-    
-    let color = arr[x][y]
-    
-    for i in x..<(x + size){
-        for j in y..<(y + size){
-            if arr[i][j] != color {
-                result = result + "("
-                return false
-            }
-        }
+func preorder(_ node: String){
+    if node == "." {
+        return
     }
-    return true
+    
+    print(node, terminator: "")
+    preorder(graph[node]!.left)
+    preorder(graph[node]!.right)
 }
 
-print(result)
+func inorder(_ node: String){
+    if node == "." {
+        return
+    }
+    
+    inorder(graph[node]!.left)
+    print(node, terminator: "")
+    inorder(graph[node]!.right)
+}
+
+func postorder(_ node: String){
+    if node == "." {
+        return
+    }
+    
+    postorder(graph[node]!.left)
+    postorder(graph[node]!.right)
+    print(node, terminator: "")
+}
+
+let orders = [preorder, inorder, postorder]
+orders.forEach {
+    $0("A")
+    print()
+}
 
