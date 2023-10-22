@@ -1,5 +1,7 @@
 # algorithm-strategies
 🤖 알고리즘 문제 해결 전략 스터디입니다.
+[백준 그룹 링크](https://www.acmicpc.net/group/19123)
+
   
 ### 멤버
 - [양재서](https://github.com/psychology50) : C++
