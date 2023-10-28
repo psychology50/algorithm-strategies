@@ -23,7 +23,7 @@ public class Main {
       switches[i] = Integer.parseInt(st.nextToken());
     }
 
-    int STUDENTNUM = Integer.parseInt (br.readLine());
+    int STUDENTNUM = Integer.parseInt(br.readLine());
 
     for(int i=0;i<STUDENTNUM;i++){
       st = new StringTokenizer(br.readLine(), " ");
@@ -33,14 +33,19 @@ public class Main {
     }
 
     for(int i=0;i<switches.length;i++){
-      if(i == 21) {
-        bw.write(String.valueOf("\n" + switches[i]));
-      }
-      if(switches.length == 41) {
-        bw.write(String.valueOf("\n" + switches[i]));
-      }
-      bw.write(String.valueOf(switches[i])+" ");
+//      if(i == 21) {
+//        bw.write(String.valueOf("\n" + switches[i]));
+//      }
+//      if(switches.length == 41) {
+//        bw.write(String.valueOf("\n" + switches[i]));
+//      }
+    //System.out.print(switches[i]+" ");
+      bw.write(String.valueOf(switches[i]) + " ");
     }
+
+    bw.flush();
+    br.close();
+    bw.close();
 
   }
 
