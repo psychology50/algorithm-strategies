@@ -32,15 +32,11 @@ public class Main {
       switchStatus(gen,num);
     }
 
-    for(int i=0;i<switches.length;i++){
-//      if(i == 21) {
-//        bw.write(String.valueOf("\n" + switches[i]));
-//      }
-//      if(switches.length == 41) {
-//        bw.write(String.valueOf("\n" + switches[i]));
-//      }
-    //System.out.print(switches[i]+" ");
-      bw.write(String.valueOf(switches[i]) + " ");
+//한 줄에 20개씩 출력
+    for(int i=0; i<SWITCHCASE; i++) {
+      System.out.print(switches[i] + " ");
+      if((i+1) % 20 == 0)
+        System.out.println();
     }
 
     bw.flush();
@@ -52,42 +48,25 @@ public class Main {
   static void switchStatus(int gen, int num){
     if(gen == 1){
       for(int i=0;i<SWITCHCASE;i++) {
-
-        if(switches[i] == 1) {
-          while(num < SWITCHCASE) {
-            switches[num] = 0;
-            num *= 2;
-          }
-        }
-
-        if(switches[i] == 0) {
-          while(num < SWITCHCASE) {
-            switches[num] = 1;
-            num *= 2;
-          }
-        }
-
+          if((i+1) % num == 0)
+            switches[i] = switches[i] == 0? 1: 0;
       }
     }
 
     if(gen == 2){
-      for(int i=0;i<SWITCHCASE;i++) {
-        int j = 1;
+      //인덱스는 -1
+      switches[num - 1] = switches[num - 1] == 0 ? 1 : 0;
 
-        if(switches[i] == 0){
-          switches[num] = 1;
-          while(num+j < SWITCHCASE){
-            if(switches[num-j] == switches[num+j]) {switches[num-j] =1 ; switches [num+j] = 1; j++;}
-          }
+      for(int j=1; j<SWITCHCASE/2; j++) {
+        //배열의 범위를 벗어날 때
+        if(num - 1 + j >= SWITCHCASE || num - 1 - j < 0)
+          break;
+        //배열의 범위가 그대로면
+        if(switches[num - 1 - j] == switches[num - 1 + j]) {
+          switches[num - 1 - j] = switches[num - 1 - j] == 0 ? 1 : 0;
+          switches[num - 1 + j] = switches[num - 1 + j] == 0 ? 1 : 0;
         }
-
-        if(switches[i] == 1){
-          switches[num] = 0;
-          while(num+j < SWITCHCASE){
-            if(switches[num-j] == switches[num+j]) {switches[num-j] =0 ; switches [num+j] = 0; j++;}
-          }
-
-        }
+        else break; //대칭 아닌것이 나오면 바로 끝낸다.
       }
     }
 
