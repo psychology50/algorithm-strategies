@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="866980c1-b572-4d9e-9f31-52ac3102cc58" name="Changes" comment="commit">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boj-1244/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/boj-1244/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/boj-1244/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/boj-1244/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +35,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
@@ -200,6 +201,9 @@
       <workItem from="1696745744501" duration="84000" />
       <workItem from="1696928182271" duration="1029000" />
       <workItem from="1696929306566" duration="2617000" />
+      <workItem from="1698472143288" duration="6188000" />
+      <workItem from="1698501893991" duration="7070000" />
+      <workItem from="1698559690577" duration="3269000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1694250112919</created>
