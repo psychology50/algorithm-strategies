@@ -12,33 +12,33 @@ public class Main {
 		int W = Integer.parseInt(st.nextToken());
 		int N = Integer.parseInt(st.nextToken());
 
-		Map<Integer, Integer> map = new HashMap<>();
-
+		List<AbstractMap.SimpleEntry<Integer, Integer>> list = new ArrayList<>();
 
 		for (int i = 0; i < N; i++) {
 			st = new StringTokenizer(br.readLine());
 			int metalW = Integer.parseInt(st.nextToken());
 			int P = Integer.parseInt(st.nextToken());
-			map.put(metalW, P);
-		}
+			list.add(new AbstractMap.SimpleEntry<>(P, metalW));
 
-		//키를 기준으로 Map 정렬
-		List<Integer> keySet = new ArrayList<>(map.keySet());
-		Collections.sort(keySet);
+			list.sort(Map.Entry.<Integer, Integer>comparingByKey().reversed());
 
-		int result = 0;
-
-		for (int i = map.size() - 1; i >= 0; i--) {
-			if (map.get(i).intValue() < W) {
-				result += map.get(i) * map.get(i).intValue();
-				W -= map.get(i).intValue();
-			} else {
-				result = 100 * map.get(i).intValue();
+			int result = 0;
+			while (W >= 0) {
+				for (AbstractMap.SimpleEntry<Integer, Integer> entry : list) {
+					if (W <= entry.getKey()) {
+						result = W * entry.getValue();
+					} else {
+						int num = entry.getKey() * entry.getValue();
+						W -= num;
+					}
+				}
 			}
+
+			System.out.println(result);
+
+
 		}
-
-		System.out.println(result);
-
 
 	}
+
 }
