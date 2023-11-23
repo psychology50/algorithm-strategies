@@ -39,7 +39,7 @@ public class Main {
 		}
 
 		if (result) { // result == true
-			System.out.println(sb.toString());
+			System.out.println(sb);
 		}
 
 	}
