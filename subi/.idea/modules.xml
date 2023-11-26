@@ -4,8 +4,10 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/boj-11170/boj-11170.iml" filepath="$PROJECT_DIR$/boj-11170/boj-11170.iml" />
       <module fileurl="file://$PROJECT_DIR$/boj-11286/boj-11286.iml" filepath="$PROJECT_DIR$/boj-11286/boj-11286.iml" />
+      <module fileurl="file://$PROJECT_DIR$/boj-11724/boj-11724.iml" filepath="$PROJECT_DIR$/boj-11724/boj-11724.iml" />
       <module fileurl="file://$PROJECT_DIR$/boj-1244/boj-1244.iml" filepath="$PROJECT_DIR$/boj-1244/boj-1244.iml" />
       <module fileurl="file://$PROJECT_DIR$/boj-12891/boj-12891.iml" filepath="$PROJECT_DIR$/boj-12891/boj-12891.iml" />
+      <module fileurl="file://$PROJECT_DIR$/boj-1427/boj-1427.iml" filepath="$PROJECT_DIR$/boj-1427/boj-1427.iml" />
       <module fileurl="file://$PROJECT_DIR$/boj-15721/boj-15721.iml" filepath="$PROJECT_DIR$/boj-15721/boj-15721.iml" />
       <module fileurl="file://$PROJECT_DIR$/boj-17626/boj-17626.iml" filepath="$PROJECT_DIR$/boj-17626/boj-17626.iml" />
       <module fileurl="file://$PROJECT_DIR$/boj-1793/boj-1793.iml" filepath="$PROJECT_DIR$/boj-1793/boj-1793.iml" />
@@ -17,6 +19,7 @@
       <module fileurl="file://$PROJECT_DIR$/boj-2422/boj-2422.iml" filepath="$PROJECT_DIR$/boj-2422/boj-2422.iml" />
       <module fileurl="file://$PROJECT_DIR$/boj-2750/boj-2750.iml" filepath="$PROJECT_DIR$/boj-2750/boj-2750.iml" />
       <module fileurl="file://$PROJECT_DIR$/boj-4779/boj-4779.iml" filepath="$PROJECT_DIR$/boj-4779/boj-4779.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kakaoTest_11_25/kakaoTest_11_25.iml" filepath="$PROJECT_DIR$/kakaoTest_11_25/kakaoTest_11_25.iml" />
       <module fileurl="file://$PROJECT_DIR$/softeer-level2-metal/softeer-level2-metal.iml" filepath="$PROJECT_DIR$/softeer-level2-metal/softeer-level2-metal.iml" />
       <module fileurl="file://$PROJECT_DIR$/subi.iml" filepath="$PROJECT_DIR$/subi.iml" />
     </modules>
