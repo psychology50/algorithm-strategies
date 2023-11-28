@@ -40,13 +40,10 @@ public class Main {
 	private static void bfs(int i, int j) {
 		//데이터가 2개 들어오니까 int 배열로
 		Queue<int[]> queue = new LinkedList<>();
-
-		//큐에 데이터 삽입
-		queue.offer(new int[] {i, j});
-
+		queue.offer(new int[] {i, j}); //큐에 데이터 삽입
+		visited[i][j] = true; // 삽입한 데이터의 방문처리
 		while (!queue.isEmpty()) { //queue가 안 비었을 때 까지
 			int now[] = queue.poll(); //하나 꺼냄
-			visited[i][j] = true; //방문했으니까 그 노드를 true로
 			for (int k = 0; k < 4; k++) { //아래 오른쪽 위쪽 왼쪽 탐색
 				int x = now[0] + dx[k];
 				int y = now[1] + dy[k];
