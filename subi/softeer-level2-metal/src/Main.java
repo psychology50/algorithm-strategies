@@ -29,20 +29,17 @@ public class Main {
 		Collections.sort(arr, Comparator.comparingInt((int[] a) -> a[1]).reversed());
 
 		int result = 0;
-		int sum = 0;
-		int count = 0;
 
 		for (int[] array : arr) {
-			//array[0] = 금속 무게, array[1] = 금속 가치
-			while (sum <= W) {
-				sum += array[0];
+			// array[0] = 금속 무게, array[1] = 금속 가치
+			// 70 90
+
+			if (W <= array[0]) {
+				result += W * array[1];
+				break;
+			} else {
 				result += array[0] * array[1];
-				count++;
-				if (sum < W) {
-					int value = arr.get(count)[1];
-					int left = W - sum;
-					result = left * value;
-				}
+				W -= array[0];
 			}
 		}
 
