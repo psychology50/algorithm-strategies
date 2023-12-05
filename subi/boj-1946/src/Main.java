@@ -30,19 +30,15 @@ public class Main {
 			//오름차순 정렬
 			Collections.sort(arr, Comparator.comparingInt((int[] a) -> a[0]));
 
-			int cnt = n;
-
-			for (int j = 1; j < arr.size(); j++) {
-				if (arr.get(0)[1] < arr.get(j)[1]) {
-					if (arr.get(arr.size() - 1)[1] > arr.get(0)[1]) {
-						//나중에 -1 헤줄꺼기 때문에 맨 마지막의 2번째 원소값이 첫 번째 값보다 크면 1 증가시켜준다.
-						cnt++;
-					}
-					cnt--;
+			int ans = 1; // 서류 1등은 무조건 통과
+			int min = arr.get(0)[1]; // 면접 점수 최소값
+			for (int j = 1; j < n; j++) { // 서류 2등부터 시작
+				if (arr.get(j)[1] < min) { // 이전의 최소 면접 점수보다 낮으면 통과
+					ans++;
+					min = arr.get(j)[1]; // 최소 점수 갱신
 				}
 			}
-
-			System.out.println(cnt - 1);
+			System.out.println(ans);
 
 		}
 
