@@ -23,6 +23,8 @@ public class Main {
 			sum = list.get(i) * count;
 			if (max <= sum) {
 				max = sum;
+			} else {
+				break;
 			}
 			count++;
 		}

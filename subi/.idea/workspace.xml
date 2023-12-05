@@ -5,8 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="866980c1-b572-4d9e-9f31-52ac3102cc58" name="Changes" comment="commit">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boj-2217/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/boj-2217/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boj-2839/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/boj-2839/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/boj-11047/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/boj-11047/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/boj-11170/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/boj-11170/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/boj-11286/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/boj-11286/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/boj-11724/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/boj-11724/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/boj-1244/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/boj-1244/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/boj-1244/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/boj-1244/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/boj-1244/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/boj-1244/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/boj-1244/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/boj-12891/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/boj-12891/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/boj-1427/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/boj-1427/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/boj-15721/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/boj-17626/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/boj-1874/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/boj-1874/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/boj-1920/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/boj-1920/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/boj-2164/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/boj-2164/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/boj-2178/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/boj-2178/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/boj-21918/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/boj-21918/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/boj-2309/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/boj-2309/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/boj-2422/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/boj-2422/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/boj-2750/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/boj-2750/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kakaoTest_11_25/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/kakaoTest_11_25/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/softeer-level2-birus/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/softeer-level2-birus/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/softeer-level2-eight/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/softeer-level2-eight/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/softeer-level2-metal/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/softeer-level2-metal/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,15 +76,18 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/hsb/bj/algorithm-strategies/subi&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;CodeWithMe&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -63,38 +95,38 @@
       <recent name="$PROJECT_DIR$/boj-17626" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (2)">
+  <component name="RunManager" selected="Application.Main (1)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="softeer-level2-eight" />
+      <module name="boh-2559" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="boj-11047" />
+      <module name="boj-2217" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="boj-1920" />
+      <module name="boj-1789" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Main (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="softeer-level2-metal" />
+      <module name="boj-16953" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="softeer-level2-birus" />
+      <module name="boj-1946" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -228,11 +260,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main (4)" />
         <item itemvalue="Application.Main (5)" />
+        <item itemvalue="Application.Main (3)" />
+        <item itemvalue="Application.Main (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -260,7 +292,8 @@
       <workItem from="1700577780874" duration="44498000" />
       <workItem from="1700988762039" duration="658000" />
       <workItem from="1701046057968" duration="27547000" />
-      <workItem from="1701232918838" duration="12573000" />
+      <workItem from="1701232918838" duration="67245000" />
+      <workItem from="1701609652454" duration="37110000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1694250112919</created>
@@ -319,6 +352,36 @@
           <url>file://$PROJECT_DIR$/boj-2164/src/Main.java</url>
           <line>18</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/boj-2217/src/Main.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/boj-2217/src/Main.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/boj-16953/src/Main.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/boj-16953/src/Main.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/boh-2559/src/Main.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/boh-2559/src/Main.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="52" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.IndexOutOfBoundsException" package="java.lang" />

@@ -14,7 +14,6 @@ public class Main {
 			} else if (n < 3) {
 				System.out.println("-1");
 				return;
-
 			}
 			n -= 3;
 			cnt++;
