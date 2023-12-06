@@ -4,113 +4,117 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 public class Main {
-
-	static char[] allNumbers;
-	static int[] containNumbers;
-	static int[] myArr;
-	static int checkCount;
+	static char original[];
+	static int check[];
+	static int current[];
+	static int cnt = 0;
 
 	public static void main(String[] args) throws IOException {
+
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st;
+
 		st = new StringTokenizer(br.readLine());
-		int allLength = Integer.parseInt(st.nextToken());
-		int partLength = Integer.parseInt(st.nextToken());
-		checkCount = 0;
+		int s = Integer.parseInt(st.nextToken());
+		int p = Integer.parseInt(st.nextToken());
 
-		allNumbers = br.readLine().toCharArray();
-
-		containNumbers = new int[4];
-		myArr = new int[4];
-		int resultCount = 0;
+		original = br.readLine().toCharArray();
+		check = new int[4];
+		current = new int[4];
 
 		st = new StringTokenizer(br.readLine());
 		for (int i = 0; i < 4; i++) {
-			containNumbers[i] = Integer.parseInt(st.nextToken());
-			if (containNumbers[i] == 0) {
-				checkCount++; //확인할 문자의 갯수가 0이먄 check된 거나 마찬가지
+			check[i] = Integer.parseInt(st.nextToken());
+			if (check[i] == 0) //0이면 문자열이 없는 상태를 만족하므로 ++
+				cnt++;
+		}
+
+		//초기 부분 문자열 지정
+		for (int i = 0; i < p; i++) {
+			addCurrent(original[i]);
+		}
+
+		int result = 0;
+		//검사 여기서 한 번
+		if (cnt == 4) {
+			result++;
+		}
+
+		//나머지 문자열 슬라이딩 (핵심!)
+		for (int i = p; i < s; i++) {
+			int left = i - p;
+			addCurrent(original[i]); //0,1,2
+			removeCurrent(original[left]); //9,10,11
+
+			//for문 안에서 확인
+			if (cnt == 4) {
+				result++;
 			}
 		}
 
-		for (int i = 0; i < partLength; i++) {
-			addNumber(allNumbers[i]);
-		}
+		//검사 여기서 두 번
+		System.out.println(result);
 
-		if (checkCount == 4) {
-			resultCount++;
-		}
-
-		// 슬라이딩 윈도우
-		for (int i = partLength; i < allLength; i++) {
-			int j = i - partLength;
-			addNumber(allNumbers[i]);
-			removeNumber(allNumbers[j]);
-			if (checkCount == 4) {
-				resultCount++;
-			}
-		}
-
-		System.out.println(resultCount);
 		br.close();
-
 	}
 
-	private static void addNumber(char number) {
-		switch (number) {
+	private static void addCurrent(char c) {
+		switch (c) {
 			case 'A':
-				myArr[0]++;
-				if (myArr[0] == containNumbers[0]) {
-					checkCount++;
+				current[0]++;
+				if (current[0] == check[0]) {
+					cnt++;
 				}
 				break;
 			case 'C':
-				myArr[1]++;
-				if (myArr[1] == containNumbers[1]) {
-					checkCount++;
+				current[1]++;
+				if (current[1] == check[1]) {
+					cnt++;
 				}
 				break;
 			case 'G':
-				myArr[2]++;
-				if (myArr[2] == containNumbers[2]) {
-					checkCount++;
+				current[2]++;
+				if (current[2] == check[2]) {
+					cnt++;
 				}
 				break;
 			case 'T':
-				myArr[3]++;
-				if (myArr[3] == containNumbers[3]) {
-					checkCount++;
+				current[3]++;
+				if (current[3] == check[3]) {
+					cnt++;
 				}
 				break;
 		}
 	}
 
-	private static void removeNumber(char number) {
-		switch (number) {
+	private static void removeCurrent(char c) {
+		switch (c) {
 			case 'A':
-				if (myArr[0] == containNumbers[0]) {
-					checkCount--;
+				if (current[0] == check[0]) { //먼저 확인하고 --
+					cnt--;
 				}
-				myArr[0]--;
+				current[0]--; //그 다음 현재 상태 배열 --
 				break;
 			case 'C':
-				if (myArr[1] == containNumbers[1]) {
-					checkCount--;
+				if (current[1] == check[1]) {
+					cnt--;
 				}
-				myArr[1]--;
+				current[1]--;
 				break;
 			case 'G':
-				if (myArr[2] == containNumbers[2]) {
-					checkCount--;
+				if (current[2] == check[2]) {
+					cnt--;
 				}
-				myArr[2]--;
+				current[2]--;
 				break;
 			case 'T':
-				if (myArr[3] == containNumbers[3]) {
-					checkCount--;
+				if (current[3] == check[3]) {
+					cnt--;
 				}
-				myArr[3]--;
+				current[3]--;
 				break;
 		}
 	}
+
 
 }
