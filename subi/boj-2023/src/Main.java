@@ -13,22 +13,23 @@ public class Main {
 		dfs(7, 1);
 	}
 
-	private static void dfs(int number, int jarisu) { //N==2면
-		//2,1 들어옴
-		if (N == jarisu) { //4자리인 수 중에서
-			if (isPrime(number)) { //소수이면
+	private static void dfs(int number, int jarisu) { //(21,2)들어오면
+		//n=2이면
+		if (N == jarisu) {
+			if (isPrime(number)) { //21이 소수인지 판단하고 소수면
 				System.out.println(number);
 			}
-			return;
+			return;//빠져나오고 3으로 이동
 		}
 
+		//자리수가 2이상부터 실행됌
 		for (int i = 1; i < 10; i++) {
 			if (i % 2 == 0) {
 				continue;
 			}
-			//21,23,25.27,29에 대해서
-			if (isPrime(number * 10 + i)) {
-				dfs(number * 10 + i, jarisu + 1);
+			//1,3,5,7,9 이면
+			if (isPrime(number * 10 + i)) { //21,23,25,27,29
+				dfs(number * 10 + i, jarisu + 1); //(21,2)가 들어감
 			}
 		}
 	}
