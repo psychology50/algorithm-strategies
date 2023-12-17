@@ -37,7 +37,7 @@ public class Main {
 		dfs(start);
 		System.out.println();
 
-		//방문 배열 초기화!
+		//방문 배열 초기화
 		visited = new boolean[node + 1];
 		bfs(start);
 	}

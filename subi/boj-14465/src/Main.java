@@ -27,17 +27,6 @@ public class Main {
 		int min = Integer.MAX_VALUE;
 		int cnt = 0;
 
-//		for (int i = start; i < end; i++) {
-//			if (end == light.length) break;
-//			if (light[i] == 1) {
-//				cnt++; //수리해야 할 것
-//			}
-//			min = Math.min(min, cnt);
-//			System.out.println(min);
-//			start++;
-//			end++;
-//		}
-
 		// 초기 구간에서 수리해야 하는 전구 개수 계산
 		for (int i = 0; i < k; i++) {
 			if (light[i] == 1) {
