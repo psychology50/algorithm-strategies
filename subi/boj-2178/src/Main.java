@@ -6,57 +6,50 @@ import java.util.Queue;
 import java.util.StringTokenizer;
 
 public class Main {
-	static int arr[][];
 	static boolean visited[][];
-	//아래쪽 오른쪽 위쪽 왼쪽
-	static int dx[] = {0, 1, 0, -1}, dy[] = {1, 0, -1, 0};
-	static int n, m;
+	static int arr[][];
+	static int N = 0, M = 0;
+
+	//오하왼상
+	static int dx[] = {1, 0, -1, 0}, dy[] = {0, 1, 0, -1};
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st;
 		st = new StringTokenizer(br.readLine());
+		N = Integer.parseInt(st.nextToken());
+		M = Integer.parseInt(st.nextToken());
+		arr = new int[N][M];
+		visited = new boolean[N][M];
 
-		n = Integer.parseInt(st.nextToken());
-		m = Integer.parseInt(st.nextToken());
-
-		arr = new int[n][m];
-		visited = new boolean[n][m];
-
-		for (int i = 0; i < n; i++) {
+		for (int i = 0; i < N; i++) {
 			String s = br.readLine();
-			for (int j = 0; j < m; j++) {
-				arr[i][j] = Integer.parseInt(s.substring(j, j + 1));
+			for (int j = 0; j < M; j++) {
+				arr[i][j] = Integer.parseInt(s.substring(j, j + 1)); //문자열 나누기에 주의!
 			}
 		}
-
-		//시작점 입력 (0,0)
-		bfs(0, 0);
-
-		//입력값은 1부터 시작이므로
-		System.out.println(arr[n - 1][m - 1]);
+		dfs(0, 0);
+		System.out.println(arr[N - 1][M - 1]);
 	}
 
-	private static void bfs(int i, int j) {
-		//데이터가 2개 들어오니까 int 배열로
+	private static void dfs(int x, int y) {
 		Queue<int[]> queue = new LinkedList<>();
-		queue.offer(new int[] {i, j}); //큐에 데이터 삽입
-		visited[i][j] = true; // 삽입한 데이터의 방문처리
-		while (!queue.isEmpty()) { //queue가 안 비었을 때 까지
-			int now[] = queue.poll(); //하나 꺼냄
-			for (int k = 0; k < 4; k++) { //아래 오른쪽 위쪽 왼쪽 탐색
-				int x = now[0] + dx[k];
-				int y = now[1] + dy[k];
-				if (x >= 0 && y >= 0 && x < n && y < m) { //배열 범위 안에서
-					if (arr[x][y] != 0 && !visited[x][y]) {//0이 아니고 방문을 안한 노드일 때
-						visited[x][y] = true;
-						arr[x][y] = arr[now[0]][now[1]] + 1; //1 증가시킨 depth값 삽입!
-						queue.add(new int[] {x, y}); //다음 값 넣어줌
+		queue.offer(new int[] {x, y});
+		visited[x][y] = true;
+
+		while (!queue.isEmpty()) {
+			int now[] = queue.poll();
+			for (int i = 0; i < 4; i++) {
+				int nextX = now[0] + dx[i];
+				int nextY = now[1] + dy[i];
+				if (nextX >= 0 && nextY >= 0 && nextX < N && nextY < M) {
+					if (!visited[nextX][nextY] && arr[nextX][nextY] != 0) {
+						visited[nextX][nextY] = true;
+						arr[nextX][nextY] = arr[now[0]][now[1]] + 1;
+						queue.add(new int[] {nextX, nextY});
 					}
 				}
 			}
-
 		}
-
 	}
 }
