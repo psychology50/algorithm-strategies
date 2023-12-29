@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.StringTokenizer;
 
 public class Main {
-
 	static ArrayList<Integer>[] A;
 	static boolean visited[];
 	static boolean arrive;
@@ -16,6 +15,7 @@ public class Main {
 		st = new StringTokenizer(br.readLine());
 		int node = Integer.parseInt(st.nextToken());
 		int edge = Integer.parseInt(st.nextToken());
+
 
 		A = new ArrayList[node];
 		visited = new boolean[node];
@@ -33,7 +33,6 @@ public class Main {
 		}
 
 		for (int i = 0; i < node; i++) {
-			//visited[i] = false;
 			dfs(i, 1);
 			if (arrive) break; //이거 안 해주면 0에서 탐색했을 때 depth가 5여도 1,2,3, 모두를 탐색한다.
 			//노드 0 일 때 5가 아니면 1,2,3... 모두를 탐색해야 하는 것이지 depth가 5라면 탐색을 노드 0에서 끝낸다.
@@ -44,6 +43,7 @@ public class Main {
 			System.out.println(0);
 		}
 	}
+
 
 	// 재귀
 	private static void dfs(int node, int depth) { //이 코드에서 노드 0으로 시작했을 때
