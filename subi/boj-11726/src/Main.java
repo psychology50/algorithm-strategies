@@ -1,32 +1,22 @@
 import java.util.Scanner;
 
 public class Main {
-	static int D[];
+	static int[] dp;
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
-		D = new int[n + 1];
 
-		//알 수 있는 값을 미리 초기화 시켜 놓자.
-		D[0] = 1;
-		D[1] = 1;
-		//1넣었을 때 D[2]를 초기화 해줘서 인덱스 에러 발생
-		//D[2] = 2;
+		dp = new int[n + 1];
+		dp[0] = 1;
+		dp[1] = 1;
 
 		for (int i = 2; i <= n; i++) {
-			tiling(i);
+			dp[i] = (dp[i - 1] + dp[i - 2]) % 10007;
 		}
 
-		//같은 거
-		System.out.println(D[n]);
 
-	}
+		System.out.println(dp[n]);
 
-	private static int tiling(int n) {
-
-		D[n] = (D[n - 1] + D[n - 2]) % 10007;
-
-		return D[n];
 	}
 }
