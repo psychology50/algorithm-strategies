@@ -66,18 +66,16 @@ public class Main {
 				Node nowNode = queue.poll();
 				int now = nowNode.ePoint;
 				if (visited[now]) continue;
-				if (nowNode.w > distance[now]) continue;
 				visited[now] = true;
 				for (Node n : ANode[now]) {
-					if (!visited[n.ePoint] && distance[n.ePoint] > distance[now] + n.w) {
-						distance[n.ePoint] = distance[now] + n.w;
+					if (!visited[n.ePoint] && distance[n.ePoint] > distance[now] + 1) {
+						distance[n.ePoint] = distance[now] + 1;
 						queue.add(new Node(n.ePoint, distance[n.ePoint]));
 					}
 				}
 			}
 			int result = distance[end];
-			System.out.printf("#" + test_case + " " + result);
-			System.out.println();
+			System.out.println("#" + test_case + " " + result);
 		}
 
 	}
@@ -86,15 +84,15 @@ public class Main {
 
 class Node implements Comparable<Node> {
 	int ePoint;
-	int w;
+	int value;
 
-	public Node(int ePoint, int w) {
+	public Node(int ePoint, int value) {
 		this.ePoint = ePoint;
-		this.w = w;
+		this.value = value;
 	}
 
-	@Override
-	public int compareTo(Node e) {
-		return w - e.w;
+	public int compareTo(Node w) {
+		return value - w.value;
 	}
+
 }
