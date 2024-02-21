@@ -7,17 +7,26 @@
     <list default="true" id="866980c1-b572-4d9e-9f31-52ac3102cc58" name="Changes" comment="commit">
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SWEA-battle-1/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/SWEA-battle-1/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boj-5585/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/boj-5585/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/boj-11726/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/boj-11726/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boj-2138/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/boj-2138/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/boj-10971/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/boj-11053/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/boj-11053/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/boj-11501/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/boj-11501/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/boj-11722/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/boj-11722/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/boj-1463/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/boj-1463/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/boj-1753/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/boj-1753/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/boj-1753/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/boj-1753/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/boj-15990/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/boj-15990/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/boj-1715/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/boj-1715/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/boj-2231/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/boj-2231/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/boj-2729/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/boj-2729/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pro-138475/Solution.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="printScope" value="1" />
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/softeer-GBC/exportToHTML" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -73,38 +82,38 @@
       <recent name="$PROJECT_DIR$/boj-17626" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="Application.Main (3)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="boj-11053" />
+      <module name="boj-2636" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="boj-2798" />
+      <module name="boj-9372" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Main (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="boj-4673" />
+      <module name="boj-1149" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Main (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="boj-2231" />
+      <module name="boj-2606" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Main (6)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="boj-15990" />
+      <module name="Hang-Array01" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -246,11 +255,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main (5)" />
         <item itemvalue="Application.Main (4)" />
         <item itemvalue="Application.Main (6)" />
-        <item itemvalue="Application.Main (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -289,7 +298,9 @@
       <workItem from="1704801116095" duration="596000" />
       <workItem from="1704802127240" duration="46171000" />
       <workItem from="1705745464138" duration="36256000" />
-      <workItem from="1706356810654" duration="14153000" />
+      <workItem from="1706356810654" duration="54282000" />
+      <workItem from="1708328214368" duration="2313000" />
+      <workItem from="1708491444068" duration="5327000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1694250112919</created>
@@ -421,12 +432,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/boj-11053/src/Main.java</url>
-          <line>25</line>
+          <line>24</line>
           <option name="timeStamp" value="93" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/boj-11053/src/Main.java</url>
-          <line>33</line>
+          <line>31</line>
           <option name="timeStamp" value="94" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
